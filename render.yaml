@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: pim-backend
+    runtime: docker
+    rootDir: backend
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false  # Set manually in Render dashboard
+      - key: GEMINI_API_KEY_2
+        sync: false  # Optional: Set for API key rotation
+      - key: GEMINI_API_KEY_3
+        sync: false  # Optional: Set for API key rotation
+      - key: GEMINI_API_KEY_4
+        sync: false  # Optional: Set for API key rotation
+      - key: GEMINI_API_KEY_5
+        sync: false  # Optional: Set for API key rotation
+      - key: DATABASE_URL
+        sync: false  # Set manually in Render dashboard
+      - key: PORT
+        value: 3000
